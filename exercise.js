@@ -1,3 +1,10 @@
+for (let num= "#"; num < "########"; num += "#")
+console.log(num)
+
+
+
+
+
 function makeboard(width,height){
     let board = "";
     for(y = 0; y < height; y++){
