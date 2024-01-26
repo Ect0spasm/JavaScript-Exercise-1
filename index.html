@@ -5,37 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Exercise</title>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="awesome.css">
 </head>
 <body>
     <section id="calculator">
         <input id="answer">
-        <button onclick="calculate()">See What Sticks!</button>
-        <button onclick="clearDisplay()">Clear</button>
+        <button onclick="calculate()" class="ans">See What Sticks!</button>
+        <button onclick="clearDisplay()" class="ans">Clear</button>
 
         <section id="options">
-            <button onclick="connectAnswer('+')" class="operation">+</button>
-            <button onclick="connectAnswer('7')">7</button>
-            <button onclick="connectAnswer('8')">8</button>
-            <button onclick="connectAnswer('9')">9</button>
-            <button onclick="connectAnswer('-')" class="operation">-</button>
-            <button onclick="connectAnswer('4')">4</button>
-            <button onclick="connectAnswer('5')">5</button>
-            <button onclick="connectAnswer('6')">6</button>
-            <button onclick="connectAnswer('*')" class="operation">*</button>
-            <button onclick="connectAnswer('1')">1</button>
-            <button onclick="connectAnswer('2')">2</button>
-            <button onclick="connectAnswer('3')">3</button>
-            <button onclick="connectAnswer('/')" class="operation">/</button>
-            <button onclick="connectAnswer('0')">0</button>
-            <button onclick="connectAnswer('.')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="clearDisplay()" class="operation">C</button>
+            <tr>
+                <td><button onclick="connectAnswer('+')" class="operation"
+                onkeydown="press(board)" value="+">+</button></td>
+                <td><button onclick="connectAnswer('7')"
+                onkeydown="press(board)" value="">7</button></td>
+                <td><button onclick="connectAnswer('8')"
+                onkeydown="press(board)" value="">8</button></td>
+                <td><button onclick="connectAnswer('9')"
+                onkeydown="press(board)" value="">9</button></td>    
+            </tr>
+
+            <tr>
+                <td><button onclick="connectAnswer('-')" class="operation">-</button></td>
+                <td><button onclick="connectAnswer('4')">4</button></td>
+                <td><button onclick="connectAnswer('5')">5</button></td>
+                <td><button onclick="connectAnswer('6')">6</button></td>
+            </tr>
+
+
+            <tr>
+                <button onclick="connectAnswer('*')" class="operation">*</button>
+                <button onclick="connectAnswer('1')">1</button>
+                <button onclick="connectAnswer('2')">2</button>
+                <button onclick="connectAnswer('3')">3</button>
+            </tr>
+            
+            <tr>
+                <button onclick="connectAnswer('/')" class="operation">/</button>
+                <button onclick="connectAnswer('0')">0</button>
+                <button onclick="connectAnswer('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()" class="operation">C</button>
+            </tr>
         </section>
     </section>
-    <h1>
+    <h1 class="color">
         Goodbye!
     </h1>
-    <p>
+    <p class="color">
         Hello.
     </p>
 </body>

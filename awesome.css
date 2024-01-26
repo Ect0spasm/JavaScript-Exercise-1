@@ -1,9 +1,15 @@
 #answer {
-    width: 10rem;
-    height: 10rem;
+    font-size: 30px;
+    width: 20rem;
+    height: 4rem;
 }
     
+.ans {
+    transform: translateY(-5.5px);
+    width: 10rem;
+    height: 4rem;
+}
 
-h1 {
-    color: transparent;
+.color {
+    color: rgba(128, 128, 128, 0);
 }
